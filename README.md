@@ -1,5 +1,10 @@
 # GCNv2 SLAM
 
+## Modified version:
+New features:
+1. Updated OpenCV dependency to support OpenCV 4.
+2. Created a docker image that can be used directly to support GCNv2_SLAM. See docker/ folder for more details.
+
 ## Introduction
 GCNv2 is a high-throughput variant of the Geometric Correspondence Network for performing RGB-D SLAM online on embedded platforms. We trained the binary descriptor in the same format with ORB (32 bytes) for the convenience of integration. In this implementation, we evaluate the motion estimation using a system built on top the [ORB-SLAM2], (https://github.com/raulmur/ORB_SLAM2). Thanks to the robustness of ORB-SLAM2, our system is able to achive reliable tracking perfomance on our drone platform in real-time. 
 
