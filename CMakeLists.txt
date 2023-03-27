@@ -31,7 +31,7 @@ endif()
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
-find_package(OpenCV 4 QUIET REQUIRED PATHS "/home/mateo/Dev/Projects/third-year-project/lib/opencv")
+find_package(OpenCV 4 QUIET REQUIRED)
 if(NOT OpenCV_FOUND)
    find_package(OpenCV 2.4.3 QUIET)
    if(NOT OpenCV_FOUND)
